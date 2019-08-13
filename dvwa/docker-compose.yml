@@ -1,0 +1,26 @@
+version: '2.2'
+networks:
+  ext:
+    external:
+      name: vlan1102
+  int-1102:
+services:
+  httpd-dvwa-1102-20:
+    image: "quay.pdsea.f5net.com/secpm/httpd-dvwa:latest"
+    hostname: httpd-dvwa-1102-20
+    cap_add:
+    - NET_ADMIN
+    networks:
+      ext:
+        ipv4_address: 10.11.2.20
+      int-1102:
+    environment:
+      DB: database
+      GW: 10.11.2.250
+      TELEMETRY_DEST: 10.11.2.247
+  mysql-1102:
+    image: "quay.pdsea.f5net.com/secpm/mysql:latest"
+    networks:
+      int-1102:
+        aliases:
+          - database

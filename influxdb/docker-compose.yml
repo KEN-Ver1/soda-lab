@@ -1,0 +1,24 @@
+version: '3'
+networks:
+  vlan1144:
+    external:
+      name: vlan1144
+  vlan973:
+    external:
+      name: vlan973
+services:
+  influxdb:
+    container_name: influxdb
+    image: influxdb:latest
+    ports:
+      - 8086:8086
+    volumes:
+      - ./influxdb.conf:/etc/influxdb/influxdb.conf:ro
+      - /tmp/influxdb:/var/lib/influxdb
+    environment:
+      INFLUXDB_DB: telegraf
+      INFLUXDB_ADMIN_ENABLED: "true"
+      INFLUXDB_ADMIN_USER: secpm
+      INFLUXDB_ADMIN_PASSWORD: secpm
+      INFLUXDB_USER: telegraf
+      INFLUXDB_USER_PASSWORD: telegraf

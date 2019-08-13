@@ -1,0 +1,14 @@
+version: '3'
+networks:
+  vlan944:
+    external:
+      name: vlan944
+services:
+  nginx:
+    image: "http-monitor"
+    container_name: "http-monitor944"
+    networks:
+      vlan944:
+    environment:
+      TELEMETRY_DEST: 10.9.44.247
+      HTTP_DEST: 10.11.44.20
