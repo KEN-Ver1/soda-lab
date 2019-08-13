@@ -1,0 +1,16 @@
+version: '2.2'
+networks:
+  net:
+    external:
+      name: vlan973
+services:
+  locust-973:
+    image: quay.pdsea.f5net.com/secpm/locust
+    networks:
+      net:
+        ipv4_address: 10.9.73.10
+    environment:
+    - LOCUSTFILE_PATH=/scenarios/browse-dvwa.py
+    - TARGET_URL=http://10.11.73.12/
+    - USERS=100
+    - HATCH_RATE=10
