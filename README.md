@@ -10,8 +10,10 @@ This an overview of the lab used for Simulation of DDoS Attacks (SODA) testing w
 
 In our lab, we have virtualized a portion of the environment to simplify the setup. We deployed both VMWare ESXi and Docker containers. In the network diagram, VMWare guests are green, Docker containers are blue and hardware appliances are black. We installed Ubuntu as VM guests to serve as Docker Hosts. 
 
-Lab Diagram
+## Lab Diagram
 
+![Lab Diagram]
+(https://github.com/KEN-Ver1/soda-lab/images/lab-diagram.png)
  
 
 
