@@ -98,7 +98,7 @@ Lab Diagram
 
 ## References:
 
-Docker Installation (Ubuntu): https://docs.docker.com/install/linux/docker-ce/ubuntu/
-Docker-Compose Installation: https://docs.docker.com/compose/install/
+### Docker Installation (Ubuntu): https://docs.docker.com/install/linux/docker-ce/ubuntu/
+### Docker-Compose Installation: https://docs.docker.com/compose/install/
  
 
