@@ -13,7 +13,7 @@ In our lab, we have virtualized a portion of the environment to simplify the set
 ## Lab Diagram
 
 ![Lab Diagram]
-(https://github.com/KEN-Ver1/soda-lab/images/lab-diagram.png)
+(https://github.com/KEN-Ver1/soda-lab/images/soda-lab-diagram.png)
  
 
 
