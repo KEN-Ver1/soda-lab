@@ -2,7 +2,7 @@
 
 This document is a WIP 
 
-## Simulation of DDoS Attacks (SODA) Lab
+## Simulation of DDoS Attacks (SODA) Lab 
 
 This an overview of the lab used for Simulation of DDoS Attacks (SODA) testing with a focus on Docker containers. With the provided instructions and config files, you can configure a lab to test DDOS posture with SODA. You can modify the config files to fit your needs or you use them as a reference to incorporate the SODA lab components into your existing lab.
 
@@ -43,10 +43,10 @@ Lab Diagram
 2.	On the virtual Ubuntu VMs, install Docker and Docker-Compose extension
 
 	a. Update apt package index 
-	   “sudo apt-get update”
+	   *“sudo apt-get update”*
 
 	b. Enable APT for HTTPS
-	   “sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common”
+	   *“sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common”*
 
 	c. Add Docker’s GPG key
 	   “curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -“
