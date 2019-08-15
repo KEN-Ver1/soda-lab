@@ -1,3 +1,8 @@
+
+
+
+WIP Progress document)
+
 ###Simulation of DDoS Attacks (SODA) Lab
 This an overview of the lab used for Simulation of DDoS Attacks (SODA) testing with a focus on Docker containers. With the provided instructions and config files, you can configure a lab to test DDOS posture with SODA. You can modify the config files to fit your needs or you use them as a reference to incorporate the SODA lab components into your existing lab.
 
