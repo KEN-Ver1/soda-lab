@@ -30,7 +30,7 @@ Lab Diagram
 	• MySQL
 	• SODA
  
-##Prerequisites – Preconfigured the following
+## Prerequisites – Preconfigured the following
 	• VMware hosts
 	• Network switches with routes 
 	• DDOS Protection appliance
